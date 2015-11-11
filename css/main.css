@@ -179,7 +179,7 @@ body {
   font-weight: 300;
   font-size: 125%;
   color: #353535;
-  padding: 1em 10%;
+  padding: 1em 5%;
   max-width: 70em;
   margin: 0 auto;
 }
@@ -195,20 +195,20 @@ h3 {
 header {
   text-align: center;
 }
-header h1 {
+h1 {
   font-size: 4em;
   margin: 0 0;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 1px 1px #fff, 2px 2px #fff, 3px 3px rgba(10,61,93,0.3), 4px 4px rgba(10,61,93,0.1);
 }
-header h2 {
+h2 {
   margin: 0.375em 0 0.65em;
 }
-header h3 {
+h3 {
   margin: 0 0 1.5em;
 }
-header h3 a {
+h3 a {
   color: inherit;
   text-decoration: none;
   background: #e4ecf1;
@@ -218,7 +218,7 @@ header h3 a {
   -webkit-transition: all 0.1s ease;
           transition: all 0.1s ease;
 }
-header h3 a:hover {
+h3 a:hover {
   background: #3f627a;
   color: #fff;
 }
@@ -330,4 +330,32 @@ header h3 a:hover {
 }
 .ac-video:after {
   background: rgba(255,171,0,0.9);
+}
+/* ==========================================================================
+   =MEDIA
+   ========================================================================== */
+@media (max-width: 90em) {
+  .creation {
+    width: 50%;
+    padding-bottom: 37.5%;
+  }
+}
+@media (max-width: 60em) {
+  h1 {
+    font-size: 3em;
+  }
+  h2,
+  h3 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 50em) {
+  body {
+    max-width: 25em;
+  }
+  .creation {
+    width: 100%;
+    padding-bottom: 75%;
+    margin-bottom: 2em;
+  }
 }

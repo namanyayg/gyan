@@ -18,7 +18,7 @@ body
   font-weight 300
   font-size 125%
   color #353535
-  padding 1em 10%
+  padding 1em 5%
   max-width 70em
   margin 0 auto
   
@@ -36,32 +36,32 @@ h1, h2, h3
 header
   text-align center
   
-  h1
-    font-size 4em
-    margin 0 0
-    font-weight 700
-    text-transform uppercase
-    text-shadow 1px 1px white, 2px 2px white, 3px 3px rgba(#0a3d5d, .3), 4px 4px rgba(#0a3d5d, .1)
+h1
+  font-size 4em
+  margin 0 0
+  font-weight 700
+  text-transform uppercase
+  text-shadow 1px 1px white, 2px 2px white, 3px 3px rgba(#0a3d5d, .3), 4px 4px rgba(#0a3d5d, .1)
 
-  h2
-    margin .375em 0 .65em
+h2
+  margin .375em 0 .65em
 
-  h3
-    margin 0 0 1.5em
+h3
+  margin 0 0 1.5em
+  
+  a 
+    color inherit
+    text-decoration none
+    background lighten($text-color, 90%)
+    border-radius 2px
+    padding 0 7px 4px
+    font-weight 400
+    transition all .1s ease
+
+    &:hover
+      background lighten($text-color, 20%)
+      color white
     
-    a 
-      color inherit
-      text-decoration none
-      background lighten($text-color, 90%)
-      border-radius 2px
-      padding 0 7px 4px
-      font-weight 400
-      transition all .1s ease
-
-      &:hover
-        background lighten($text-color, 20%)
-        color white
-      
 
 .creations
   overflow hidden
@@ -168,3 +168,30 @@ header
     background rgba(#FFAB00, .05)
   &:after
     background rgba(#FFAB00, .9)
+    
+
+
+
+/* ==========================================================================
+   =MEDIA
+   ========================================================================== */
+
+@media (max-width 90em) 
+  .creation
+    width 50%
+    padding-bottom 37.5%
+
+@media (max-width 60em)
+  h1 
+    font-size 3em
+  h2, h3
+    font-size 1em
+    
+@media (max-width 50em)
+  body
+    max-width 25em
+
+  .creation
+    width 100%
+    padding-bottom 75%
+    margin-bottom 2em
