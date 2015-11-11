@@ -271,12 +271,13 @@ h3 a:hover {
   color: #fff;
   -webkit-transition: all 0.2s ease-out;
           transition: all 0.2s ease-out;
-  text-shadow: 1px 1px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px rgba(0,0,0,0.1);
 }
-.creation .sep {
+.creation .type:before {
+  content: '|';
   opacity: 0.5;
   text-shadow: none;
-  padding: 0 0.6em;
+  padding: 0 0.4em;
   position: relative;
   top: -1px;
 }
@@ -362,5 +363,10 @@ h3 a:hover {
 @media (max-width: 35em) {
   body {
     font-size: 112.5%;
+  }
+}
+@media (max-width: 30em) {
+  .type {
+    display: none;
   }
 }

@@ -34,7 +34,7 @@ var paths = {
   templates: {
     src: ['jade/*.jade', 'jade/**/*.jade', '!jade/_*.jade', '!jade/**/_*.jade' ],
     watch: ['jade/**/*.jade', 'jade/*.jade'],
-    dest: '/',
+    dest: '.',
   }
 }
 
