@@ -266,7 +266,7 @@ h3 a:hover {
 }
 .creation__name {
   text-align: center;
-  padding: 1.5em;
+  padding: 1.5em 1em;
   line-height: 1;
   color: #fff;
   -webkit-transition: all 0.2s ease-out;
@@ -293,7 +293,7 @@ h3 a:hover {
   height: 6em;
 }
 .creation:hover .creation__name {
-  padding: 2.5em;
+  padding: 2.5em 1em;
 }
 .collisions .creation__overlay {
   background: rgba(14,173,21,0.05);
@@ -357,5 +357,10 @@ h3 a:hover {
     width: 100%;
     padding-bottom: 75%;
     margin-bottom: 2em;
+  }
+}
+@media (max-width: 35em) {
+  body {
+    font-size: 112.5%;
   }
 }
