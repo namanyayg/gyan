@@ -179,9 +179,6 @@ body {
   font-weight: 300;
   font-size: 125%;
   color: #353535;
-  padding: 1em 5%;
-  max-width: 70em;
-  margin: 0 auto;
 }
 h1,
 h2,
@@ -226,12 +223,12 @@ h3 a:hover {
   overflow: hidden;
 }
 .creation {
-  width: 33.33%;
+  width: 25%;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   float: left;
   height: 0;
-  padding-bottom: 25%;
+  padding-bottom: 18.75%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -332,16 +329,32 @@ h3 a:hover {
 .ac-video:after {
   background: rgba(255,171,0,0.9);
 }
+.diode .creation__overlay {
+  background: rgba(255,85,137,0.06);
+}
+.diode:after {
+  background: rgba(255,85,137,0.9);
+}
+.bandc .creation__overlay {
+  background: rgba(86,94,142,0.06);
+}
+.bandc:after {
+  background: rgba(86,94,142,0.9);
+}
 /* ==========================================================================
    =MEDIA
    ========================================================================== */
 @media (max-width: 90em) {
   .creation {
+    width: 33.3333%;
+    padding-bottom: 25%;
+  }
+}
+@media (max-width: 65em) {
+  .creation {
     width: 50%;
     padding-bottom: 37.5%;
   }
-}
-@media (max-width: 60em) {
   h1 {
     font-size: 3em;
   }
@@ -353,6 +366,7 @@ h3 a:hover {
 @media (max-width: 50em) {
   body {
     max-width: 25em;
+    margin: 0 auto;
   }
   .creation {
     width: 100%;

@@ -18,9 +18,6 @@ body
   font-weight 300
   font-size 125%
   color #353535
-  padding 1em 5%
-  max-width 70em
-  margin 0 auto
   
 $text-color = desaturate(#0a3d5d, 60%)
 h1, h2, h3
@@ -67,11 +64,11 @@ h3
   overflow hidden
 
 .creation
-  width 33.33%
+  width 25%
   box-sizing border-box
   float left
   height 0
-  padding-bottom 25%
+  padding-bottom 18.75%
   overflow hidden
   position relative
   cursor pointer
@@ -171,6 +168,17 @@ h3
   &:after
     background rgba(#FFAB00, .9)
     
+.diode
+  .creation__overlay
+    background rgba(#ff5589, .06)
+  &:after
+    background rgba(#ff5589, .9)
+
+.bandc
+  .creation__overlay
+    background rgba(#565e8e, .06)
+  &:after
+    background rgba(#565e8e, .9)  
 
 
 
@@ -180,10 +188,14 @@ h3
 
 @media (max-width 90em) 
   .creation
+    width 33.3333%
+    padding-bottom 25%
+
+@media (max-width 65em)
+  .creation
     width 50%
     padding-bottom 37.5%
-
-@media (max-width 60em)
+    
   h1 
     font-size 3em
   h2, h3
@@ -192,6 +204,7 @@ h3
 @media (max-width 50em)
   body
     max-width 25em
+    margin: 0 auto;
 
   .creation
     width 100%
