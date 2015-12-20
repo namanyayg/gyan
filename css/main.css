@@ -221,14 +221,16 @@ h3 a:hover {
 }
 .creations {
   overflow: hidden;
+  max-width: 70em;
+  margin: 0 auto 4em;
 }
 .creation {
-  width: 25%;
+  width: 33.33%;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   float: left;
   height: 0;
-  padding-bottom: 18.75%;
+  padding-bottom: 25%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -341,6 +343,12 @@ h3 a:hover {
 .bandc:after {
   background: rgba(86,94,142,0.9);
 }
+.acgraphs .creation__overlay {
+  background: rgba(0,150,136,0.07);
+}
+.acgraphs:after {
+  background: rgba(0,150,136,0.9);
+}
 /* ==========================================================================
    =MEDIA
    ========================================================================== */
@@ -354,6 +362,7 @@ h3 a:hover {
   .creation {
     width: 50%;
     padding-bottom: 37.5%;
+    margin: 1.5em 0;
   }
   h1 {
     font-size: 3em;
